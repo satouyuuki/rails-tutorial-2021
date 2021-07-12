@@ -27,6 +27,14 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :test do
+  gem 'rails-controller-testing'
+  gem 'minitest'
+  gem 'minitest-reporters'
+  gem 'guard'
+  gem 'guard-minitest'
+end
+
 group :production do
   # gem 'pg', '0.20.0'
   gem 'mysql2'
