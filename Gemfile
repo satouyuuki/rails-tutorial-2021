@@ -11,6 +11,7 @@ gem 'jbuilder', '2.6.4'
 # add gem
 gem 'jquery-rails', '4.3.1'
 gem 'bootstrap-sass', '3.3.7'
+gem 'bcrypt', '3.1.12'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
