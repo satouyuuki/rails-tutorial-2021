@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get '/signup', to: 'user#new'
+  get '/signup', to: 'users#new'
+  post '/signup', to: 'users#create'
 
   # get 'static_pages/help'からget toを使うことで以下の名前付きルートが使えるようになる
   # help_path -> '/help'
@@ -11,4 +12,6 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
 
   root 'static_pages#home'
+
+  resources :users
 end
