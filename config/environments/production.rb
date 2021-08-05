@@ -66,7 +66,9 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  # config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :smtp
+  host = 'yuuki-aws-test.work'
+  config.action_mailer.default_url_options = { host: host, protocol: 'http' }
   config.action_mailer.smtp_settings = {
     :address => "email-smtp.ap-northeast-1.amazonaws.com",
     :port => 587,
