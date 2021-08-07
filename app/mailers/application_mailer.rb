@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'tamyu784@exdonuts.com'
+  default from: 'info@yuuki-aws-test.work'
   layout 'mailer'
 end
