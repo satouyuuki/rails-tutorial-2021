@@ -20,9 +20,10 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
 
   root 'static_pages#home'
+  post '/', to: 'microposts#create'
 
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :update, :edit]
-  resources :microposts, only: [:create, :destroy]
+  resources :microposts, only: [:destroy]
 end
